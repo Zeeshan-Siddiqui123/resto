@@ -1,0 +1,2637 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px black;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 2;
+}
+
+.name {
+    position: relative;
+    font-size: 30px;
+    bottom: 10px;
+    left: 80px;
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    bottom: 65px;
+    font-size: 20px;
+}
+
+#home,
+#about,
+#dishes,
+#menu {
+    color: black;
+    text-decoration: none;
+}
+
+#home:hover {
+    background-color: #00a876;
+    border-radius: 10px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    transition: 0.1s ease;
+    box-shadow: 0 0 10px #00a876;
+}
+
+#about:hover {
+    background-color: #00a876;
+    border-radius: 10px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    transition: 0.1s ease;
+    padding: 5px;
+    box-shadow: 0 0 10px #00a876;
+}
+
+#dishes:hover {
+    background-color: #00a876;
+    border-radius: 10px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    transition: 0.1s ease;
+    padding: 5px;
+    box-shadow: 0 0 10px #00a876;
+}
+
+#menu:hover {
+    background-color: #00a876;
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+    color: white;
+    text-align: center;
+    transition: 0.1s ease;
+    box-shadow: 0 0 10px #00a876;
+}
+
+#bag-shopping-solid {
+    position: absolute;
+    right: 160px;
+    width: 30px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+#bag-shopping-solid:hover {
+    box-shadow: 0 0 20px #00a876;
+    border-radius: 50%;
+}
+
+.quantity {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    right: 147px;
+    padding: 0px 5px;
+}
+
+#contact {
+    position: absolute;
+    right: 50px;
+    height: 25px;
+    width: 70px;
+    background-color: #00a876;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#contact:hover {
+    box-shadow: 0 0 10px #00a876;
+}
+
+#utensils-solid {
+    position: absolute;
+    bottom: 18px;
+    left: 45px;
+    width: 25px;
+}
+
+.img-chicken {
+    position: relative;
+    top: 80px;
+    width: 100%px;
+    height: 500px;
+    /* background-color: white; */
+    background-image: url("tobacco-whole-chicken-plate-with-herbs-tomato-black-background-top-view-copy-space_89816-38991.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stayhome {
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 400px;
+    top: -100px;
+}
+
+.food-more {
+    position: absolute;
+    color: rgba(230, 97, 20, 0.863);
+    font-size: 80px;
+    left: 400px;
+    top: 80px;
+}
+
+.new-food {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 250px;
+    left: 400px;
+}
+
+.resto {
+    position: absolute;
+    color: #00a876;
+    font-size: 50px;
+    top: 330px;
+    left: 600px;
+}
+
+#utensils-solid2 {
+    position: absolute;
+    left: 530px;
+    width: 60px;
+    top: 375px;
+}
+
+#Dishes {
+    position: relative;
+    /* background-color: white; */
+    width: 100%;
+    height: 600px;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our-dishes {
+    position: absolute;
+    color: #00a876;
+    font-size: 20px;
+    text-align: center;
+    top: 20px;
+    left: 46%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.popular-dishes {
+    position: absolute;
+    color: #000000;
+    font-size: 40px;
+    text-align: center;
+    top: 35px;
+    left: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.food1 {
+    top: 150px;
+    left: 200px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food1-img {
+    position: absolute;
+    width: 150px;
+    left: 47px;
+}
+
+.food1-tasty {
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 120px;
+    left: 70px;
+    color: rgb(1, 1, 61);
+}
+
+.star1 {
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 70px;
+}
+
+.star2 {
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 91px;
+}
+
+.star3 {
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 111px;
+}
+
+.star4 {
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 133px;
+}
+
+.star5 {
+    width: 20px;
+    position: absolute;
+    top: 170px;
+    left: 155px;
+}
+
+.food-rs {
+    position: absolute;
+    color: #00a876;
+    font-size: 20px;
+    top: 190px;
+    left: 20px;
+}
+
+#add-cart {
+    position: absolute;
+    top: 200px;
+    color: white;
+    background-color: rgb(2, 2, 83);
+    border: 1px solid rgb(2, 2, 83);
+    padding: 10px;
+    left: 130px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-cart:hover {
+    box-shadow: 0 0 10px #060138;
+    padding: 12px;
+}
+
+.food2 {
+    top: 150px;
+    left: 550px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food3 {
+    top: 150px;
+    left: 900px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food-img {
+    position: absolute;
+    width: 250px;
+    left: 0px;
+    height: 130px;
+}
+
+.food4 {
+    top: 450px;
+    left: 200px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food5 {
+    top: 450px;
+    left: 550px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food6 {
+    top: 450px;
+    left: 900px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.card {
+    position: absolute;
+    top: -170px;
+    right: 90%;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    height: 98vh;
+    z-index: 1;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: 0.4s, top, 0.4s;
+}
+
+.card h1 {
+    color: #00a876;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkout {
+    position: absolute;
+    bottom: 75px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkout div {
+    background-color: #00a876;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00a876;
+    color: white;
+}
+
+.card .checkout div:nth-child(2) {
+    background-color: white;
+    color: #00a876;
+}
+
+.open-card {
+    left: 90%;
+    /* top: -170px; */
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.listCart .item img {
+    width: 100%;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .product-quantity span {
+    display: inline;
+    width: 45px;
+    height: 35px;
+    background-color: #00a876;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.listCart .product-quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #00a876;
+}
+
+
+#About {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 500px;
+}
+
+.about-us {
+    position: absolute;
+    color: #00a876;
+    font-size: 20px;
+    text-align: center;
+    top: 20px;
+    left: 48%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.choose {
+    position: absolute;
+    color: #060138;
+    font-size: 40px;
+    text-align: center;
+    top: 35px;
+    left: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-img {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 150px;
+    left: 200px;
+    box-shadow: 0 0 10px lightslategray;
+}
+
+.best-food {
+    position: absolute;
+    color: #060138;
+    font-size: 40px;
+    text-align: center;
+    top: 100px;
+    left: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.para-lorem {
+    position: absolute;
+    color: #747377;
+    font-size: 20px;
+    text-align: center;
+    top: 180px;
+    left: 55%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.delivery {
+    position: absolute;
+    top: 450px;
+    background-color: #aaaaaa;
+    left: 65%;
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+    width: 110px;
+    color: white;
+    text-align: right;
+}
+
+.payment {
+    position: absolute;
+    top: 450px;
+    background-color: #aaaaaa;
+    left: 75%;
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+    text-align: right;
+    width: 110px;
+    color: white;
+}
+
+.service {
+    position: absolute;
+    top: 450px;
+    background-color: #aaaaaa;
+    left: 85%;
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+    text-align: right;
+    width: 110px;
+    color: white;
+}
+
+.truck-solid {
+    position: absolute;
+    width: 25px;
+    left: 0px;
+    top: 19px;
+}
+
+.dollar-sign-solid {
+    position: absolute;
+    width: 20px;
+    left: 0px;
+    top: 15px;
+}
+
+.clock-regular {
+    position: absolute;
+    width: 27px;
+    left: 3px;
+    top: 15px;
+}
+
+#Menu {
+    position: relative;
+    /* background-color: white; */
+    width: 100%;
+    height: 900px;
+    top: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.food7 {
+    top: 750px;
+    left: 200px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food8 {
+    top: 750px;
+    left: 550px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+.food9 {
+    top: 750px;
+    left: 900px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgb(185, 181, 181);
+}
+
+#order-now {
+    position: absolute;
+    top: 200px;
+    color: white;
+    background-color: rgb(2, 2, 83);
+    border: 1px solid rgb(2, 2, 83);
+    padding: 10px;
+    left: 130px;
+    border-radius: 10px;
+}
+
+#order-now:hover {
+    box-shadow: 0 0 20px #060138;
+    padding: 12px;
+}
+
+.order {
+    z-index: 1;
+    width: 350px;
+    box-shadow: var(box-shadow);
+    background: #dad4d4;
+    position: relative;
+    left: 0px;
+    top: -100px;
+    padding: 30px;
+    margin: auto;
+    visibility: hidden;
+    height: 370px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: 0.4s, top, 0.4s;
+}
+
+.order-open {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    top: 300px;
+    left: 205px;
+}
+
+.order h3 {
+    position: absolute;
+    color: #00a876;
+    left: 170px;
+    top: -10px;
+}
+
+.order h1 {
+    text-align: center;
+    color: #060138;
+    position: absolute;
+    left: 125px;
+    top: 15px;
+}
+
+.order form .inputbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 120px;
+    padding: 2px;
+}
+
+.input-name {
+    position: absolute;
+    top: 80px;
+    left: 125px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.input-number {
+    position: absolute;
+    top: 120px;
+    left: 125px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.input-quantity {
+    position: absolute;
+    top: 160px;
+    left: 125px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.input-date {
+    position: absolute;
+    top: 200px;
+    left: 125px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+    padding: 5px;
+}
+
+.input-address {
+    position: absolute;
+    top: 240px;
+    left: 125px;
+    border: 0;
+    border-bottom: 2px solid #000000;
+    padding: 5px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+#input-order {
+    position: absolute;
+    top: 280px;
+    left: 125px;
+    border: 1px solid #00a876;
+    color: white;
+    padding: 10px;
+    width: 180px;
+    background-color: #00a876;
+    padding: 5px;
+}
+
+#input-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #00a876;
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    background-color: #00a876;
+    padding: 5px;
+}
+
+#Contact {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    border-radius: 10px;
+    top: 380px;
+}
+
+.cont {
+    position: absolute;
+    color: #00a876;
+
+    font-size: 20px;
+    top: 20px;
+    left: 45%;
+}
+
+.cont-us {
+    position: absolute;
+    top: 40px;
+    left: 40%;
+    font-size: 40px;
+    color: #060138;
+}
+
+.location-dot {
+    position: absolute;
+    width: 25px;
+    top: 180px;
+    left: 20px;
+}
+
+.location {
+    position: absolute;
+    color: #060138;
+    top: 150px;
+    left: 60px;
+    font-size: 30px;
+}
+
+.phone-solid {
+    position: absolute;
+    width: 25px;
+    top: 234px;
+    left: 20px;
+}
+
+.phone {
+    position: absolute;
+    color: #060138;
+    top: 200px;
+    left: 60px;
+    font-size: 30px;
+}
+
+.user-solid {
+    position: absolute;
+    width: 25px;
+    top: 284px;
+    left: 20px;
+}
+
+.user {
+    position: absolute;
+    color: #060138;
+    top: 252px;
+    left: 60px;
+    font-size: 30px;
+}
+
+.touch {
+    position: absolute;
+    color: #060138;
+    top: 350px;
+    left: 20px;
+    font-size: 30px;
+}
+
+.name-inp {
+    position: absolute;
+    border: 0;
+    border-bottom: 1px solid #00a876;
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    color: #060138;
+    top: 430px;
+    left: 20px;
+
+}
+
+.email {
+    position: absolute;
+    border: 0;
+    border-bottom: 1px solid #00a876;
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    color: #060138;
+    top: 500px;
+    left: 20px;
+
+}
+
+.feedback {
+    position: absolute;
+    border: 0;
+    border-bottom: 1px solid #00a876;
+    width: 600px;
+    height: 60px;
+    padding: 10px;
+    color: #060138;
+    top: 570px;
+    left: 20px;
+
+}
+
+#btn {
+    position: absolute;
+    border: 1px solid #00a876;
+    background-color: #00a876;
+    width: 70px;
+    height: 40px;
+    padding: 3px;
+    color: #f0eff5;
+    top: 670px;
+    left: 20px;
+    border-radius: 8px;
+}
+
+#btn:hover {
+    box-shadow: 0 0 10px #060138;
+    width: 80px;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    box-shadow: 0 0 10px #000000;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: 0.4s, top, 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 60%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.popup button {
+    background-color: #00a876;
+    color: white;
+    font-size: 20px;
+    width: 300px;
+    border: 1px solid #00a876;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+.footer{
+    width: 100%;
+    background-color: #00a876;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        border: 1px solid white;
+        box-shadow: 0px 0px 10px black;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        z-index: 2;
+    }
+    .name {
+        position: relative;
+        font-size: 25px;
+        bottom: 5px;
+        left: 30px;
+    }
+    
+    .nav-link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        bottom: 7px;
+        background-color: #00a876;
+        font-size: 20px;
+    }
+    
+    #home,
+    #about,
+    #dishes,
+    #menu {
+        color: white;
+        text-decoration: none;
+    }
+    #bag-shopping-solid {
+        position: absolute;
+        right: 85px;
+        width: 25px;
+        bottom: 20px;
+        cursor: pointer;
+    }
+    .quantity {
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        top: 22px;
+        right: 77px;
+        padding: 0px 5px;
+    }
+    
+    #contact {
+        position: absolute;
+        bottom: 38px;
+        right: 0px;
+        height: 25px;
+        width: 65px;
+        background-color: #00a876;
+        text-decoration: none;
+        color: white;
+        padding: 7px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    #utensils-solid {
+        position: absolute;
+        bottom: 22px;
+        left: 5px;
+        width: 25px;
+    }
+    .img-chicken {
+        position: relative;
+        top: 90px;
+        height: 350px;
+    }
+    .stayhome {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        left: 110px;
+        top: -20px;
+    }
+    
+    .food-more {
+        position: absolute;
+        color: rgba(230, 97, 20, 0.863);
+        font-size: 30px;
+        left: 120px;
+        top: 60px;
+    }   
+    .new-food {
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        top: 120px;
+        left: 80px;
+    }   
+    .resto {
+        position: absolute;
+        color: #00a876;
+        font-size: 50px;
+        top: 150px;
+        left: 160px;
+    } 
+    #utensils-solid2 {
+        position: absolute;
+        left: 80px;
+        width: 60px;
+        top: 200px;
+    }
+    #Dishes {
+        position: relative;
+        /* background-color: white; */
+        width: 100%;
+        height: 1600px;
+        top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }   
+    .our-dishes {
+        position: absolute;
+        color: #00a876;
+        font-size: 20px;
+        text-align: center;
+        top: 20px;
+        left: 38%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .popular-dishes {
+        position: absolute;
+        color: #000000;
+        font-size: 30px;
+        text-align: center;
+        top: 35px;
+        left: 25%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .food1 {
+        top: 130px;
+        left: 90px;
+    }
+    .food2 {
+        top: 400px;
+        left: 90px;
+    }
+    .food3 {
+        top: 670px;
+        left: 90px;
+    }     
+    .food4 {
+        top: 950px;
+        left: 90px;
+    }  
+    .food5 {
+        top: 1220px;
+        left: 90px;
+    }  
+    .food6 {
+        top: 1490px;
+        left: 90px;
+    }
+    .food7 {
+        top: 1760px;
+        left: 90px;
+    }
+    .food8 {
+        top: 2030px;
+        left: 90px;
+    }
+    .food9 {
+        top: 2300px;
+        left: 90px;
+    }
+    .card {
+        position: absolute;
+        top: -120px;
+        right: 90%;
+        width: 280px;
+        background-color: white;
+        box-shadow: 0 0 10px white;
+        height: 98vh;
+        z-index: 1;
+        visibility: hidden;
+        transform: translate(-50%, -50%) scale(0.1);
+        transition: 0.4s, top, 0.4s;
+    }
+    .open-card {
+        left: 67%;
+        /* top: -170px; */
+        transform: translate(-50%, -50%) scale(1);
+        visibility: visible;
+    }
+    .card .checkout {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #About {
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: 900px;
+    }
+    .about-us {
+        position: absolute;
+        color: #00a876;
+        font-size: 20px;
+        text-align: center;
+        top: 20px;
+        left: 41%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } 
+    .choose {
+        position: absolute;
+        color: #060138;
+        font-size: 25px;
+        text-align: center;
+        top: 35px;
+        left: 26%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }   
+    .about-img {
+        position: absolute;
+        width: 380px;
+        height: 300px;
+        top: 110px;
+        left: 22px;
+        box-shadow: 0 0 10px lightslategray;
+    }    
+    .best-food {
+        position: absolute;
+        color: #060138;
+        font-size: 27px;
+        text-align: center;
+        top: 400px;
+        left: 12%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .para-lorem {
+        position: absolute;
+        color: #747377;
+        font-size: 20px;
+        text-align: center;
+        top: 480px;
+        left: 2%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .delivery {
+        position: absolute;
+        top: 820px;
+        background-color: #aaaaaa;
+        left: 20%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        width: 110px;
+        color: white;
+        text-align: right;
+    }
+    
+    .payment {
+        position: absolute;
+        top: 820px;
+        background-color: #aaaaaa;
+        left: 53%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        text-align: right;
+        width: 110px;
+        color: white;
+    }
+    
+    .service {
+        position: absolute;
+        top: 900px;
+        background-color: #aaaaaa;
+        left: 37%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        text-align: right;
+        width: 110px;
+        color: white;
+    }
+    #Menu {
+        position: relative;
+        /* background-color: white; */
+        width: 100%;
+        height: 2450px;
+        top: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .order {
+        z-index: 1;
+        width: 300px;
+        box-shadow: var(box-shadow);
+        background: #dad4d4;
+        position: relative;
+        left: 0px;
+        top: -100px;
+        padding: 30px;
+        margin: auto;
+        visibility: hidden;
+        height: 370px;
+        border-radius: 20px;
+        transform: translate(-50%, -50%) scale(0.1);
+        transition: 0.4s, top, 0.4s;
+    }
+    .order-open {
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+        top: 300px;
+        left: 180px;
+    }
+    .order h3 {
+        position: absolute;
+        color: #00a876;
+        left: 140px;
+        top: -10px;
+    }
+    
+    .order h1 {
+        text-align: center;
+        color: #060138;
+        position: absolute;
+        left: 90px;
+        top: 15px;
+    }
+    
+    .order form .inputbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 120px;
+        padding: 2px;
+    }
+    
+    .input-name {
+        position: absolute;
+        top: 80px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        padding: 5px;
+        background-color: transparent;
+    }
+    
+    .input-number {
+        position: absolute;
+        top: 120px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }
+    
+    .input-quantity {
+        position: absolute;
+        top: 160px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }
+    
+    .input-date {
+        position: absolute;
+        top: 200px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }   
+    .input-address {
+        position: absolute;
+        top: 240px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        padding: 5px;
+        background-color: transparent;
+        padding: 5px;
+    }
+    #input-order {
+        position: absolute;
+        top: 280px;
+        left: 95px;
+        border: 1px solid #00a876;
+        color: white;
+        padding: 10px;
+        width: 180px;
+        background-color: #00a876;
+        padding: 5px;
+    }
+    #Contact {
+        position: relative;
+        width: 100%;
+        height: 750px;
+        border-radius: 10px;
+        top: 380px;
+    }
+    
+    .cont {
+        position: absolute;
+        color: #00a876;    
+        font-size: 20px;
+        top: 20px;
+        left: 40%;
+    }
+    
+    .cont-us {
+        position: absolute;
+        top: 40px;
+        left: 28%;
+        font-size: 30px;
+        color: #060138;
+    }
+    
+    .location-dot {
+        position: absolute;
+        width: 20px;
+        top: 150px;
+        left: 20px;
+    }
+    
+    .location {
+        position: absolute;
+        color: #060138;
+        top: 123px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .phone-solid {
+        position: absolute;
+        width: 20px;
+        top: 200px;
+        left: 20px;
+    }
+    
+    .phone {
+        position: absolute;
+        color: #060138;
+        top: 170px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .user-solid {
+        position: absolute;
+        width: 20px;
+        top: 245px;
+        left: 20px;
+    }
+    
+    .user {
+        position: absolute;
+        color: #060138;
+        top: 220px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .touch {
+        position: absolute;
+        color: #060138;
+        top: 270px;
+        left: 20px;
+        font-size: 30px;
+    }
+    
+    .name-inp {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 320px;
+        height: 40px;
+        padding: 5px;
+        color: #060138;
+        top: 300px;
+        left: 10px;
+    
+    }
+    
+    .email {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 320px;
+        height: 40px;
+        padding: 5px;
+        color: #060138;
+        top: 360px;
+        left: 10px;
+    
+    }
+    
+    .feedback {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 320px;
+        height: 60px;
+        padding: 10px;
+        color: #060138;
+        top: 420px;
+        left: 10px;
+    
+    }
+    
+    #btn {
+        position: absolute;
+        border: 1px solid #00a876;
+        background-color: #00a876;
+        width: 70px;
+        height: 40px;
+        padding: 3px;
+        color: #f0eff5;
+        top: 520px;
+        left: 10px;
+        border-radius: 8px;
+    }
+    .popup {
+        width: 200px;
+        background-color: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        box-shadow: 0 0 10px #000000;
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: 0.4s, top, 0.4s;
+    }
+    
+    .open-popup {
+        visibility: visible;
+        top: 60%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .popup button {
+        background-color: #00a876;
+        color: white;
+        font-size: 20px;
+        width: 200px;
+        border: 1px solid #00a876;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        color: white;
+        top: 220px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        border: 1px solid white;
+        box-shadow: 0px 0px 10px black;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        z-index: 2;
+    }
+    .name {
+        position: relative;
+        font-size: 25px;
+        bottom: 5px;
+        left: 30px;
+    }
+    
+    .nav-link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        bottom: 7px;
+        background-color: #00a876;
+        font-size: 20px;
+    }
+    .quantity {
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        top: 22px;
+        right: 77px;
+        padding: 0px 5px;
+    }
+    #home,
+    #about,
+    #dishes,
+    #menu {
+        color: white;
+        text-decoration: none;
+    }
+    #bag-shopping-solid {
+        position: absolute;
+        right: 85px;
+        width: 25px;
+        bottom: 20px;
+        cursor: pointer;
+    }
+    #contact {
+        position: absolute;
+        bottom: 38px;
+        right: 0px;
+        height: 25px;
+        width: 65px;
+        background-color: #00a876;
+        text-decoration: none;
+        color: white;
+        padding: 7px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    #utensils-solid {
+        position: absolute;
+        bottom: 22px;
+        left: 5px;
+        width: 25px;
+    }
+    .img-chicken {
+        position: relative;
+        top: 90px;
+        height: 350px;
+    }
+    .stayhome {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        left: 80px;
+        top: -20px;
+    }
+    
+    .food-more {
+        position: absolute;
+        color: rgba(230, 97, 20, 0.863);
+        font-size: 30px;
+        left: 80px;
+        top: 60px;
+    }   
+    .new-food {
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        top: 120px;
+        left: 50px;
+    }   
+    .resto {
+        position: absolute;
+        color: #00a876;
+        font-size: 50px;
+        top: 150px;
+        left: 130px;
+    } 
+    #utensils-solid2 {
+        position: absolute;
+        left: 50px;
+        width: 60px;
+        top: 200px;
+    }
+    #Dishes {
+        position: relative;
+        /* background-color: white; */
+        width: 100%;
+        height: 1600px;
+        top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }   
+    .our-dishes {
+        position: absolute;
+        color: #00a876;
+        font-size: 20px;
+        text-align: center;
+        top: 20px;
+        left: 35%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .popular-dishes {
+        position: absolute;
+        color: #000000;
+        font-size: 30px;
+        text-align: center;
+        top: 35px;
+        left: 21%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .food1 {
+        top: 130px;
+        left: 65px;
+    }
+    .food2 {
+        top: 400px;
+        left: 65px;
+    }
+    .food3 {
+        top: 670px;
+        left: 65px;
+    }     
+    .food4 {
+        top: 950px;
+        left: 65px;
+    }  
+    .food5 {
+        top: 1220px;
+        left: 65px;
+    }  
+    .food6 {
+        top: 1490px;
+        left: 65px;
+    }
+    .food7 {
+        top: 1760px;
+        left: 65px;
+    }
+    .food8 {
+        top: 2030px;
+        left: 65px;
+    }
+    .food9 {
+        top: 2300px;
+        left: 65px;
+    }
+    .card {
+        position: absolute;
+        top: -120px;
+        right: 90%;
+        width: 280px;
+        background-color: white;
+        box-shadow: 0 0 10px white;
+        height: 98vh;
+        z-index: 1;
+        visibility: hidden;
+        transform: translate(-50%, -50%) scale(0.1);
+        transition: 0.4s, top, 0.4s;
+    }
+    .open-card {
+        left: 62%;
+        /* top: -170px; */
+        transform: translate(-50%, -50%) scale(1);
+        visibility: visible;
+    }
+    .card .checkout {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #About {
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: 900px;
+    }
+    .about-us {
+        position: absolute;
+        color: #00a876;
+        font-size: 20px;
+        text-align: center;
+        top: 20px;
+        left: 38%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } 
+    .choose {
+        position: absolute;
+        color: #060138;
+        font-size: 25px;
+        text-align: center;
+        top: 35px;
+        left: 23%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }   
+    .about-img {
+        position: absolute;
+        width: 335px;
+        height: 300px;
+        top: 110px;
+        left: 20px;
+        box-shadow: 0 0 10px lightslategray;
+    }    
+    .best-food {
+        position: absolute;
+        color: #060138;
+        font-size: 27px;
+        text-align: center;
+        top: 400px;
+        left: 9%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .para-lorem {
+        position: absolute;
+        color: #747377;
+        font-size: 18px;
+        text-align: center;
+        top: 480px;
+        left: 2.5%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .delivery {
+        position: absolute;
+        top: 800px;
+        background-color: #aaaaaa;
+        left: 15%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        width: 110px;
+        color: white;
+        text-align: right;
+    }
+    
+    .payment {
+        position: absolute;
+        top: 800px;
+        background-color: #aaaaaa;
+        left: 53%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        text-align: right;
+        width: 110px;
+        color: white;
+    }
+    
+    .service {
+        position: absolute;
+        top: 900px;
+        background-color: #aaaaaa;
+        left: 35%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        text-align: right;
+        width: 110px;
+        color: white;
+    }
+    #Menu {
+        position: relative;
+        /* background-color: white; */
+        width: 100%;
+        height: 2450px;
+        top: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .order {
+        z-index: 1;
+        width: 300px;
+        box-shadow: var(box-shadow);
+        background: #dad4d4;
+        position: relative;
+        left: 0px;
+        top: -100px;
+        padding: 30px;
+        margin: auto;
+        visibility: hidden;
+        height: 370px;
+        border-radius: 20px;
+        transform: translate(-50%, -50%) scale(0.1);
+        transition: 0.4s, top, 0.4s;
+    }
+    .order-open {
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+        top: 300px;
+        left: 180px;
+    }
+    .order h3 {
+        position: absolute;
+        color: #00a876;
+        left: 140px;
+        top: -10px;
+    }
+    
+    .order h1 {
+        text-align: center;
+        color: #060138;
+        position: absolute;
+        left: 90px;
+        top: 15px;
+    }
+    
+    .order form .inputbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 120px;
+        padding: 2px;
+    }
+    
+    .input-name {
+        position: absolute;
+        top: 80px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        padding: 5px;
+        background-color: transparent;
+    }
+    
+    .input-number {
+        position: absolute;
+        top: 120px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }
+    
+    .input-quantity {
+        position: absolute;
+        top: 160px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }
+    
+    .input-date {
+        position: absolute;
+        top: 200px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }   
+    .input-address {
+        position: absolute;
+        top: 240px;
+        left: 95px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        padding: 5px;
+        background-color: transparent;
+        padding: 5px;
+    }
+    #input-order {
+        position: absolute;
+        top: 280px;
+        left: 95px;
+        border: 1px solid #00a876;
+        color: white;
+        padding: 10px;
+        width: 180px;
+        background-color: #00a876;
+        padding: 5px;
+    }
+    #Contact {
+        position: relative;
+        width: 100%;
+        height: 750px;
+        border-radius: 10px;
+        top: 380px;
+    }
+    
+    .cont {
+        position: absolute;
+        color: #00a876;    
+        font-size: 20px;
+        top: 20px;
+        left: 38%;
+    }
+    
+    .cont-us {
+        position: absolute;
+        top: 40px;
+        left: 25%;
+        font-size: 30px;
+        color: #060138;
+    }
+    
+    .location-dot {
+        position: absolute;
+        width: 20px;
+        top: 150px;
+        left: 20px;
+    }
+    
+    .location {
+        position: absolute;
+        color: #060138;
+        top: 123px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .phone-solid {
+        position: absolute;
+        width: 20px;
+        top: 200px;
+        left: 20px;
+    }
+    
+    .phone {
+        position: absolute;
+        color: #060138;
+        top: 170px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .user-solid {
+        position: absolute;
+        width: 20px;
+        top: 245px;
+        left: 20px;
+    }
+    
+    .user {
+        position: absolute;
+        color: #060138;
+        top: 220px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .touch {
+        position: absolute;
+        color: #060138;
+        top: 270px;
+        left: 20px;
+        font-size: 30px;
+    }
+    
+    .name-inp {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 300px;
+        height: 40px;
+        padding: 5px;
+        color: #060138;
+        top: 300px;
+        left: 10px;
+    
+    }
+    
+    .email {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 300px;
+        height: 40px;
+        padding: 5px;
+        color: #060138;
+        top: 360px;
+        left: 10px;
+    
+    }
+    
+    .feedback {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 300px;
+        height: 60px;
+        padding: 10px;
+        color: #060138;
+        top: 420px;
+        left: 10px;
+    
+    }
+    
+    #btn {
+        position: absolute;
+        border: 1px solid #00a876;
+        background-color: #00a876;
+        width: 70px;
+        height: 40px;
+        padding: 3px;
+        color: #f0eff5;
+        top: 520px;
+        left: 10px;
+        border-radius: 8px;
+    }
+    .popup {
+        width: 200px;
+        background-color: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        box-shadow: 0 0 10px #000000;
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: 0.4s, top, 0.4s;
+    }
+    
+    .open-popup {
+        visibility: visible;
+        top: 60%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .popup button {
+        background-color: #00a876;
+        color: white;
+        font-size: 20px;
+        width: 200px;
+        border: 1px solid #00a876;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+        color: white;
+        top: 220px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        border: 1px solid white;
+        box-shadow: 0px 0px 10px black;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        z-index: 2;
+    }
+    .name {
+        position: relative;
+        font-size: 25px;
+        bottom: 5px;
+        left: 30px;
+    }
+    
+    .nav-link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        bottom: 7px;
+        background-color: #00a876;
+        font-size: 20px;
+    }
+    
+    #home,
+    #about,
+    #dishes,
+    #menu {
+        color: white;
+        text-decoration: none;
+    }
+    #bag-shopping-solid {
+        position: absolute;
+        right: 85px;
+        width: 25px;
+        bottom: 20px;
+        cursor: pointer;
+    }
+    #contact {
+        position: absolute;
+        bottom: 38px;
+        right: 0px;
+        height: 25px;
+        width: 65px;
+        background-color: #00a876;
+        text-decoration: none;
+        color: white;
+        padding: 7px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    #utensils-solid {
+        position: absolute;
+        bottom: 22px;
+        left: 5px;
+        width: 25px;
+    }
+    .img-chicken {
+        position: relative;
+        top: 90px;
+        height: 350px;
+    }
+    .stayhome {
+        position: absolute;
+        color: white;
+        font-size: 40px;
+        left: 55px;
+        top: -20px;
+    }
+    
+    .food-more {
+        position: absolute;
+        color: rgba(230, 97, 20, 0.863);
+        font-size: 30px;
+        left: 70px;
+        top: 60px;
+    }   
+    .new-food {
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        top: 120px;
+        left: 30px;
+    }   
+    .resto {
+        position: absolute;
+        color: #00a876;
+        font-size: 50px;
+        top: 150px;
+        left: 100px;
+    } 
+    #utensils-solid2 {
+        position: absolute;
+        left: 30px;
+        width: 60px;
+        top: 200px;
+    }
+    #Dishes {
+        position: relative;
+        /* background-color: white; */
+        width: 100%;
+        height: 1600px;
+        top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }   
+    .our-dishes {
+        position: absolute;
+        color: #00a876;
+        font-size: 20px;
+        text-align: center;
+        top: 20px;
+        left: 33%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .popular-dishes {
+        position: absolute;
+        color: #000000;
+        font-size: 30px;
+        text-align: center;
+        top: 35px;
+        left: 17%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .food1 {
+        top: 130px;
+        left: 35px;
+    }
+    .food2 {
+        top: 400px;
+        left: 35px;
+    }
+    .food3 {
+        top: 670px;
+        left: 35px;
+    }     
+    .food4 {
+        top: 950px;
+        left: 35px;
+    }  
+    .food5 {
+        top: 1220px;
+        left: 35px;
+    }  
+    .food6 {
+        top: 1490px;
+        left: 35px;
+    }
+    .food7 {
+        top: 1760px;
+        left: 35px;
+    }
+    .food8 {
+        top: 2030px;
+        left: 35px;
+    }
+    .food9 {
+        top: 2300px;
+        left: 35px;
+    }
+    .card {
+        position: absolute;
+        top: -120px;
+        right: 90%;
+        width: 280px;
+        background-color: white;
+        box-shadow: 0 0 10px white;
+        height: 98vh;
+        z-index: 1;
+        visibility: hidden;
+        transform: translate(-50%, -50%) scale(0.1);
+        transition: 0.4s, top, 0.4s;
+    }
+    .open-card {
+        left: 55%;
+        /* top: -170px; */
+        transform: translate(-50%, -50%) scale(1);
+        visibility: visible;
+    }
+    .card .checkout {
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #About {
+        position: relative;
+        top: 200px;
+        width: 100%;
+        height: 900px;
+    }
+    .about-us {
+        position: absolute;
+        color: #00a876;
+        font-size: 20px;
+        text-align: center;
+        top: 20px;
+        left: 36%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    } 
+    .choose {
+        position: absolute;
+        color: #060138;
+        font-size: 25px;
+        text-align: center;
+        top: 35px;
+        left: 20%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }   
+    .about-img {
+        position: absolute;
+        width: 280px;
+        height: 300px;
+        top: 110px;
+        left: 20px;
+        box-shadow: 0 0 10px lightslategray;
+    }    
+    .best-food {
+        position: absolute;
+        color: #060138;
+        font-size: 25px;
+        text-align: center;
+        top: 400px;
+        left: 5%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .para-lorem {
+        position: absolute;
+        color: #747377;
+        font-size: 15px;
+        text-align: center;
+        top: 480px;
+        left: 2.5%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .delivery {
+        position: absolute;
+        top: 740px;
+        background-color: #aaaaaa;
+        left: 32%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        width: 110px;
+        color: white;
+        text-align: right;
+    }
+    
+    .payment {
+        position: absolute;
+        top: 820px;
+        background-color: #aaaaaa;
+        left: 32%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        text-align: right;
+        width: 110px;
+        color: white;
+    }
+    
+    .service {
+        position: absolute;
+        top: 900px;
+        background-color: #aaaaaa;
+        left: 32%;
+        border: 1px solid #aaaaaa;
+        padding: 5px;
+        text-align: right;
+        width: 110px;
+        color: white;
+    }
+    #Menu {
+        position: relative;
+        /* background-color: white; */
+        width: 100%;
+        height: 2450px;
+        top: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .order {
+        z-index: 1;
+        width: 300px;
+        box-shadow: var(box-shadow);
+        background: #dad4d4;
+        position: relative;
+        left: 0px;
+        top: -100px;
+        padding: 30px;
+        margin: auto;
+        visibility: hidden;
+        height: 370px;
+        border-radius: 20px;
+        transform: translate(-50%, -50%) scale(0.1);
+        transition: 0.4s, top, 0.4s;
+    }
+    .order-open {
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+        top: 300px;
+        left: 160px;
+    }
+    .order h3 {
+        position: absolute;
+        color: #00a876;
+        left: 120px;
+        top: -10px;
+    }
+    
+    .order h1 {
+        text-align: center;
+        color: #060138;
+        position: absolute;
+        left: 70px;
+        top: 15px;
+    }
+    
+    .order form .inputbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 120px;
+        padding: 2px;
+    }
+    
+    .input-name {
+        position: absolute;
+        top: 80px;
+        left: 75px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        padding: 5px;
+        background-color: transparent;
+    }
+    
+    .input-number {
+        position: absolute;
+        top: 120px;
+        left: 75px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }
+    
+    .input-quantity {
+        position: absolute;
+        top: 160px;
+        left: 75px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }
+    
+    .input-date {
+        position: absolute;
+        top: 200px;
+        left: 75px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        background-color: transparent;
+        padding: 5px;
+    }   
+    .input-address {
+        position: absolute;
+        top: 240px;
+        left: 75px;
+        border: 0;
+        border-bottom: 2px solid #000000;
+        padding: 5px;
+        background-color: transparent;
+        padding: 5px;
+    }
+    #input-order {
+        position: absolute;
+        top: 280px;
+        left: 75px;
+        border: 1px solid #00a876;
+        color: white;
+        padding: 10px;
+        width: 180px;
+        background-color: #00a876;
+        padding: 5px;
+    }
+    #Contact {
+        position: relative;
+        width: 100%;
+        height: 750px;
+        border-radius: 10px;
+        top: 380px;
+    }
+    
+    .cont {
+        position: absolute;
+        color: #00a876;    
+        font-size: 20px;
+        top: 20px;
+        left: 35%;
+    }
+    
+    .cont-us {
+        position: absolute;
+        top: 40px;
+        left: 22%;
+        font-size: 30px;
+        color: #060138;
+    }
+    
+    .location-dot {
+        position: absolute;
+        width: 20px;
+        top: 150px;
+        left: 20px;
+    }
+    
+    .location {
+        position: absolute;
+        color: #060138;
+        top: 123px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .phone-solid {
+        position: absolute;
+        width: 20px;
+        top: 200px;
+        left: 20px;
+    }
+    
+    .phone {
+        position: absolute;
+        color: #060138;
+        top: 170px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .user-solid {
+        position: absolute;
+        width: 20px;
+        top: 245px;
+        left: 20px;
+    }
+    
+    .user {
+        position: absolute;
+        color: #060138;
+        top: 220px;
+        left: 50px;
+        font-size: 25px;
+    }
+    
+    .touch {
+        position: absolute;
+        color: #060138;
+        top: 270px;
+        left: 20px;
+        font-size: 30px;
+    }
+    
+    .name-inp {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 250px;
+        height: 40px;
+        padding: 5px;
+        color: #060138;
+        top: 300px;
+        left: 10px;
+    
+    }
+    
+    .email {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 250px;
+        height: 40px;
+        padding: 5px;
+        color: #060138;
+        top: 360px;
+        left: 10px;
+    
+    }
+    
+    .feedback {
+        position: absolute;
+        border: 0;
+        border-bottom: 1px solid #00a876;
+        width: 250px;
+        height: 60px;
+        padding: 10px;
+        color: #060138;
+        top: 420px;
+        left: 10px;
+    
+    }
+    
+    #btn {
+        position: absolute;
+        border: 1px solid #00a876;
+        background-color: #00a876;
+        width: 70px;
+        height: 40px;
+        padding: 3px;
+        color: #f0eff5;
+        top: 520px;
+        left: 10px;
+        border-radius: 8px;
+    }
+    .popup {
+        width: 200px;
+        background-color: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1);
+        box-shadow: 0 0 10px #000000;
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: 0.4s, top, 0.4s;
+    }
+    
+    .open-popup {
+        visibility: visible;
+        top: 60%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .popup button {
+        background-color: #00a876;
+        color: white;
+        font-size: 20px;
+        width: 200px;
+        border: 1px solid #00a876;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+    }
+    .footer{
+        width: 100%;
+        background-color: #00a876;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 220px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

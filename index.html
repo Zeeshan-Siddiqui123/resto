@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="svg" href="utensils-solid.svg">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+
+            <img src="utensils-solid.svg" alt="" id="utensils-solid">
+            <h3 class="name">Resto.</h3>
+            <div id="toggle-btn" onclick="togglePopupOpen()"></div>
+            <div id="toggle-popup">
+                <div class="nav-link">
+                    <a href="#Home" id="home" onclick="togglePopupClose()">Home</a>
+                    <a href="#Dishes" id="dishes">Dishes</a>
+                    <a href="#About" id="about">About</a>
+                    <a href="#Menu" id="menu">Menu</a>
+                    <a href="#Contact" id="contact">Contact</a>
+                </div>
+                <a href="#Home"><img src="bag-shopping-solid.svg" alt="" id="bag-shopping-solid"
+                        onclick="openShopping()"></a>
+                <span class="quantity" id="quantity-red"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <div id="Home">
+        <div class="img-chicken">
+            <p class="stayhome">#Stayathome</p>
+            <p class="food-more">Food And More</p>
+            <p class="new-food">Discover New Food With</p>
+            <p class="resto">RESTO.</p>
+            <img src="utensils-solid.svg" alt="" id="utensils-solid2">
+        </div>
+
+    </div>
+    <!-- Dishes Section -->
+    <div id="Dishes">
+        <p class="our-dishes">Our Dishes</p>
+        <p class="popular-dishes">Popular Dishes</p>
+        <div class="main-food">
+            <div class="food1">
+                <img src="images.jpg" alt="" class="food1-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 400</p>
+                <button id="add-cart" onclick="openItem()">Add To Cart</button>
+            </div>
+            <div class="food2">
+                <img src="nuggets.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 300</p>
+                <button id="add-cart">Add To Cart</button>
+            </div>
+            <div class="food3">
+                <img src="download.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 600</p>
+                <button id="add-cart">Add To Cart</button>
+            </div>
+            <div class="food4">
+                <img src="deserts.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 500</p>
+                <button id="add-cart">Add To Cart</button>
+            </div>
+            <div class="food5">
+                <img src="tobacco-whole-chicken-plate-with-herbs-tomato-black-background-top-view-copy-space_89816-38991.avif"
+                    alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 400</p>
+                <button id="add-cart">Add To Cart</button>
+            </div>
+            <div class="food6">
+                <img src="image" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 550</p>
+                <button id="add-cart">Add To Cart</button>
+            </div>
+        </div>
+        <div id="card" class="card">
+            <h1>Cart</h1>
+            <div class="listCart">
+                <div class="item" id="item1">
+                    <div class="product-image">
+                        <img src="images.jpg" alt="">
+                    </div>
+                    <div class="product-price" id="product-price">
+                        
+                    </div>
+                    <div class="product-quantity">
+                        <span id="decrease" onclick="decrease()"><</span>
+                        <span id="counter"></span>
+                        <span id="increase" onclick="increase()">></span>
+                    </div>
+                </div>
+                <div class="item" id="item2">
+                    <div class="product-image">
+                        <img src="nuggets.jpeg" alt="">
+                    </div>
+                    <div id="product-price2">
+                        
+                    </div>
+                    <div class="product-quantity">
+                        <span id="decrease2" onclick="decrease2()"><</span>
+                        <span id="counter2"></span>
+                        <span id="increase2" onclick="increase2()">></span>
+                    </div>
+                </div>
+                <div class="item" id="item3">
+                    <div class="product-image">
+                        <img src="download.jpeg" alt="">
+                    </div>
+                    <div id="product-price3">
+                        
+                    </div>
+                    <div class="product-quantity">
+                        <span id="decrease3" onclick="decrease3()"><</span>
+                        <span id="counter3"></span>
+                        <span id="increase3" onclick="increase3()">></span>
+                    </div>
+                </div>
+                <div class="item" id="item4">
+                    <div class="product-image">
+                        <img src="deserts.jpeg" alt="">
+                    </div>
+                    <div id="product-price4">
+                        
+                    </div>
+                    <div class="product-quantity">
+                        <span id="decrease4" onclick="decrease4()"><</span>
+                        <span id="counter4"></span>
+                        <span id="increase4" onclick="increase4()">></span>
+                    </div>
+                </div>
+                <div class="item" id="item5">
+                    <div class="product-image">
+                        <img src="tobacco-whole-chicken-plate-with-herbs-tomato-black-background-top-view-copy-space_89816-38991.avif" alt="">
+                    </div>
+                    <div id="product-price5">
+                        
+                    </div>
+                    <div class="product-quantity">
+                        <span id="decrease5" onclick="decrease5()"><</span>
+                        <span id="counter5"></span>
+                        <span id="increase5" onclick="increase5()">></span>
+                    </div>
+                </div>
+                <div class="item" id="item6">
+                    <div class="product-image">
+                        <img src="image" alt="">
+                    </div>
+                    <div id="product-price6">
+                        
+                    </div>
+                    <div class="product-quantity">
+                        <span id="decrease6" onclick="decrease6()"><</span>
+                        <span id="counter6"></span>
+                        <span id="increase6" onclick="increase6()">></span>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-card"></ul>
+            <div class="checkout">
+                <div class="total" id="total-amount"></div>
+                <div class="closeshopping" onclick="closeShopping()">Close</div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="About">
+        <p class="about-us">About Us</p>
+        <p class="choose">Why Choose Us?</p>
+        <img src="deserts.jpeg" alt="" class="about-img">
+        <p class="best-food">Best Food In The Country</p>
+        <p class="para-lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus officiis sit nisi
+            adipisci veniam aspernatur assumenda minima quia esse asperiores, odit architecto corrupti aliquid explicabo
+            fugiat! Eligendi debitis atque illo, nesciunt in, suscipit corporis adipisci labore maiores vitae, porro
+            inventore culpa deleniti aliquam blanditiis distinctio quaerat aliquid voluptate ipsa eveniet! Amet
+            laboriosam atque tenetur maxime odio recusandae temporibus consectetur quae!</p>
+        <div class="delivery"><img src="truck-solid.svg" alt="" class="truck-solid">
+            <p class="del-text">Free Delivery</p>
+        </div>
+        <div class="payment"><img src="dollar-sign-solid.svg" alt="" class="dollar-sign-solid">
+            <p>Easy Payment</p>
+        </div>
+        <div class="service"><img src="clock-regular (1).svg" alt="" class="clock-regular">
+            <p>24/7 Service</p>
+        </div>
+    </div>
+    <!-- Menu Section -->
+    <div id="Menu">
+        <p class="our-dishes">Our Menu</p>
+        <p class="popular-dishes">Today's Menu</p>
+        <div class="main-food">
+            <div class="food1">
+                <img src="images.jpg" alt="" class="food1-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 400</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food2">
+                <img src="nuggets.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 300</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food3">
+                <img src="download.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 600</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food4">
+                <img src="deserts.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 500</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food5">
+                <img src="tobacco-whole-chicken-plate-with-herbs-tomato-black-background-top-view-copy-space_89816-38991.avif"
+                    alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 400</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food6">
+                <img src="image" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 550</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food7">
+                <img src="biryani.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 450</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food8">
+                <img src="seekh kabab.jpg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 300</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+            <div class="food9">
+                <img src="shami kabab.jpeg" alt="" class="food-img">
+                <p class="food1-tasty">Tasty Food</p>
+                <img src="star-solid.svg" alt="" class="star1">
+                <img src="star-solid.svg" alt="" class="star2">
+                <img src="star-solid.svg" alt="" class="star3">
+                <img src="star-solid.svg" alt="" class="star4">
+                <img src="star-solid.svg" alt="" class="star5">
+                <p class="food-rs">Rs. 550</p>
+                <button id="order-now" onclick="openOrder()">Order Now</button>
+            </div>
+        </div>
+        <section class="order" id="order">
+            <h3>Order Now </h3>
+            <h1 class="fast">FREE AND FAST </h1>
+            <form>
+                <input type="text" placeholder="Enter Your Name" class="input-name">
+                <input type="number" placeholder="Enter Your Number" class="input-number">
+                <input type="text" placeholder="How Many Orders" class="input-quantity">
+                <input type="datetime-local" class="input-date">
+                <input type="text" placeholder="Your Address" class="input-address">
+                <button id="input-close" onclick="closeOrder()">X</button>
+                <button id="input-order" onclick="orderpopupopen()">Order</button>
+
+                <div id="popuporder" class="popup">
+                    <img src="check-solid.svg" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your Order Will Be Ready in 30 minutes Please Stay. <br>Thanks For Choosing Us</p>
+                    <button onclick="orderpopupclose()">OK</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+    <!-- Contact Section -->
+    <div id="Contact">
+        <p class="cont">CONTACT</p>
+        <p class="cont-us">CONTACT US</p>
+        <img src="./location-dot-solid.svg" alt="" class="location-dot">
+        <p class="location">Karachi,Pakistan</p>
+        <img src="./phone-solid.svg" alt="" class="phone-solid">
+        <p class="phone">+92 3142372327</p>
+        <img src="./user-solid.svg" alt="" class="user-solid">
+        <p class="user">resto123@gmail.com</p>
+        <p class="touch">let's Get in Touch</p>
+        <form>
+            <input type="text" placeholder="Enter Your Name" class="name-inp">
+            <input type="email" placeholder="Enter Your Email" class="email">
+            <input type="text" placeholder="Your Feedback" class="feedback">
+            <button id="btn" type="submit" onclick="openPopup()">SEND</button>
+            <div>
+
+                <div id="popup" class="popup">
+                    <img src="check-solid.svg" alt="">
+                    <h2>Thank You!</h2>
+                    <p>Your Message Has Been Sent Successfully. <br>Thanks For Your Feedback</p>
+                    <button onclick="closePopup()">OK</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <p>@Copyright By 2024 <br> Made by #CodeCommandoes.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
